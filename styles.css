@@ -117,8 +117,13 @@ h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 0 0 10px; text-align: center; 
   padding: 24px 22px; transition: transform .18s ease, box-shadow .18s ease;
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(16,24,43,.09); }
-.card .ico { font-size: 26px; }
-.card h3 { margin: 12px 0 8px; font-size: 17px; }
+.card .ico {
+  width: 46px; height: 46px; display: grid; place-items: center;
+  border-radius: 13px; font-size: 19px; color: var(--brand);
+  background: linear-gradient(120deg, rgba(99,102,241,.13), rgba(139,92,246,.13));
+  margin-bottom: 4px;
+}
+.card h3 { margin: 10px 0 8px; font-size: 17px; }
 .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
 
 /* ---------- 快速开始 ---------- */
@@ -161,6 +166,9 @@ h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 0 0 10px; text-align: center; 
 /* ---------- 安全 ---------- */
 .security-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .security-grid h3 { margin: 0 0 8px; font-size: 16px; }
+.security-grid h3 i { color: var(--brand); font-size: 15px; }
+.nav-burger i { font-size: 16px; }
+.btn i { font-size: 12px; }
 .security-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
 
 /* ---------- 底部 CTA / 页脚 ---------- */

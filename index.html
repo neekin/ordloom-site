@@ -9,6 +9,7 @@
 <meta property="og:description" content="可视化页面搭建 · 数字大屏 · 业务报表 · 表单问卷 · 变更订阅 · 企业级安全" />
 <meta property="og:image" content="assets/visual-builder-demo.gif" />
 <link rel="icon" type="image/png" href="assets/icon-192.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,7 +25,7 @@
       <a href="https://github.com/neekin/ordloom-docs" target="_blank" rel="noopener">使用手册</a>
       <a class="nav-cta" href="https://github.com/neekin/simpleui-antd" target="_blank" rel="noopener">GitHub</a>
     </nav>
-    <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false">☰</button>
+    <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
   </div>
 </header>
 
@@ -36,7 +37,7 @@
       <p class="hero-sub">一个 pip 包,接管你的后台:可视化页面搭建、数字大屏、业务报表、表单问卷、数据订阅与企业级安全——<b>零前端工程</b>,装上即用。</p>
       <div class="hero-actions">
         <div class="install" id="installCmd"><code>pip install ordloom==1.0.0</code><button class="copy" data-copy="pip install ordloom==1.0.0" aria-label="复制安装命令">复制</button></div>
-        <a class="btn ghost" href="https://github.com/neekin/ordloom-docs" target="_blank" rel="noopener">阅读使用手册 ↗</a>
+        <a class="btn ghost" href="https://github.com/neekin/ordloom-docs" target="_blank" rel="noopener">阅读使用手册 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
       </div>
       <div class="hero-chips">
         <span>38 种搭建选项</span><span>17 类数据图表</span><span>11 套起始模板</span><span>GraphQL 数据层可选</span>
@@ -62,15 +63,15 @@
       <h2 class="reveal">一个包,接管整个后台</h2>
       <p class="section-sub reveal">不写前端,也能交付业务系统。所有能力都来自同一个 pip 包,按需启用。</p>
       <div class="features">
-        <article class="card reveal"><span class="ico">🧩</span><h3>可视化页面搭建</h3><p>38 种组件拖入画布:文本、指标、图表、表格、轮播、表单……对齐吸附、图层管理、撤销重做、模板起步。</p></article>
-        <article class="card reveal"><span class="ico">🖥️</span><h3>数字大屏与 H5</h3><p>1600×900 大屏与 375 宽 H5 画板,滚动叙事动画、多屏轮播播放器、全屏放映与免登录公开链接。</p></article>
-        <article class="card reveal"><span class="ico">📊</span><h3>业务报表</h3><p>选模型 → 维度 → 指标 → 条件 → 图表,聚合报表保存后可嵌入工作台与可视化页面,数据权限始终按实际读取身份执行。</p></article>
-        <article class="card reveal"><span class="ico">🗄️</span><h3>数据集与字段绑定</h3><p>GraphQL 字段目录、类型化筛选与聚合;发布不可变版本,组件绑定明确版本与参数,升级互不影响。</p></article>
-        <article class="card reveal"><span class="ico">📝</span><h3>表单与问卷</h3><p>9 种题型、服务端校验、题目快照与防重复提交;结果按创建人隔离,支持筛选与 CSV 导出。</p></article>
-        <article class="card reveal"><span class="ico">🔗</span><h3>公开分享与授权</h3><p>UUID 免登录分享;二维码、访问密码、有效期与关闭分享;页面专用数据授权可随时撤销,只返回映射字段。</p></article>
-        <article class="card reveal"><span class="ico">⚡</span><h3>变更订阅</h3><p>模型数据变化经 WebSocket 或签名轮询推送,绑定组件自动重读——刷新间隔、在途合并与隐藏暂停一应俱全。</p></article>
-        <article class="card reveal"><span class="ico">🧭</span><h3>工作台</h3><p>卡片拖拽排序、宽度与隐藏按账号持久化,5 套工作台模板;业务报表一键嵌入工作台。</p></article>
-        <article class="card reveal"><span class="ico">🛡️</span><h3>企业级安全</h3><p>两步验证(TOTP)、登录 IP 白名单、会话验证码、连续失败锁定、字段级权限与审计日志 CSV 导出。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><h3>可视化页面搭建</h3><p>38 种组件拖入画布:文本、指标、图表、表格、轮播、表单……对齐吸附、图层管理、撤销重做、模板起步。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-desktop" aria-hidden="true"></i></span><h3>数字大屏与 H5</h3><p>1600×900 大屏与 375 宽 H5 画板,滚动叙事动画、多屏轮播播放器、全屏放映与免登录公开链接。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></span><h3>业务报表</h3><p>选模型 → 维度 → 指标 → 条件 → 图表,聚合报表保存后可嵌入工作台与可视化页面,数据权限始终按实际读取身份执行。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-database" aria-hidden="true"></i></span><h3>数据集与字段绑定</h3><p>GraphQL 字段目录、类型化筛选与聚合;发布不可变版本,组件绑定明确版本与参数,升级互不影响。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span><h3>表单与问卷</h3><p>9 种题型、服务端校验、题目快照与防重复提交;结果按创建人隔离,支持筛选与 CSV 导出。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></span><h3>公开分享与授权</h3><p>UUID 免登录分享;二维码、访问密码、有效期与关闭分享;页面专用数据授权可随时撤销,只返回映射字段。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span><h3>变更订阅</h3><p>模型数据变化经 WebSocket 或签名轮询推送,绑定组件自动重读——刷新间隔、在途合并与隐藏暂停一应俱全。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span><h3>工作台</h3><p>卡片拖拽排序、宽度与隐藏按账号持久化,5 套工作台模板;业务报表一键嵌入工作台。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><h3>企业级安全</h3><p>两步验证(TOTP)、登录 IP 白名单、会话验证码、连续失败锁定、字段级权限与审计日志 CSV 导出。</p></article>
       </div>
     </div>
   </section>
@@ -128,10 +129,10 @@ python manage.py runserver</code></pre><button class="copy" data-copy="python ma
     <div class="wrap">
       <h2 class="reveal">安全,不是可选项</h2>
       <div class="security-grid">
-        <div class="reveal"><h3>🔐 两步验证</h3><p>纯 Python 实现的 TOTP(RFC 6238),认证器扫码即用;登录必须携带动态验证码。</p></div>
-        <div class="reveal"><h3>🌐 登录 IP 白名单</h3><p>按精确 IP 与 CIDR 网段限制登录来源,未命中一律拒绝。</p></div>
-        <div class="reveal"><h3>🧱 连续失败锁定</h3><p>共享 cache 计数,15 分钟内 5 次失败即锁定,多实例部署一致生效。</p></div>
-        <div class="reveal"><h3>📜 审计与隔离</h3><p>操作日志按权限范围过滤并支持 CSV 导出;页面、报表、答卷按创建人隔离;动态字段权限阻止越权推断。</p></div>
+        <div class="reveal"><h3><i class="fa-solid fa-key" aria-hidden="true"></i> 两步验证</h3><p>纯 Python 实现的 TOTP(RFC 6238),认证器扫码即用;登录必须携带动态验证码。</p></div>
+        <div class="reveal"><h3><i class="fa-solid fa-globe" aria-hidden="true"></i> 登录 IP 白名单</h3><p>按精确 IP 与 CIDR 网段限制登录来源,未命中一律拒绝。</p></div>
+        <div class="reveal"><h3><i class="fa-solid fa-lock" aria-hidden="true"></i> 连续失败锁定</h3><p>共享 cache 计数,15 分钟内 5 次失败即锁定,多实例部署一致生效。</p></div>
+        <div class="reveal"><h3><i class="fa-solid fa-file-lines" aria-hidden="true"></i> 审计与隔离</h3><p>操作日志按权限范围过滤并支持 CSV 导出;页面、报表、答卷按创建人隔离;动态字段权限阻止越权推断。</p></div>
       </div>
     </div>
   </section>
