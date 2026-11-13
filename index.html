@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>序衡 Ordloom · 让 Django Admin 长成你的业务工作台</title>
-<meta name="description" content="序衡 Ordloom:可配置的 Django Admin 工作台。可视化页面搭建、数字大屏、业务报表、表单问卷、数据订阅与企业级安全,一个 pip 包全部带走。" />
+<meta name="description" content="序衡 Ordloom:可配置的 Django Admin 工作台。可视化页面搭建、数字大屏、业务报表、表单问卷、数据订阅与企业级安全,以及 CRM 等九个独立业务子应用。" />
 <meta property="og:title" content="序衡 Ordloom · Django Admin 业务工作台" />
-<meta property="og:description" content="可视化页面搭建 · 数字大屏 · 业务报表 · 表单问卷 · 变更订阅 · 企业级安全" />
+<meta property="og:description" content="可视化页面搭建 · 数字大屏 · 业务报表 · 表单问卷 · 变更订阅 · CRM 与九应用生态" />
 <meta property="og:image" content="assets/visual-builder-demo.gif" />
 <link rel="icon" type="image/png" href="assets/icon-192.png" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=1.2.0" />
 </head>
 <body>
 <header class="nav" id="top">
@@ -19,6 +19,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="#features">功能</a>
       <a href="#screens">界面</a>
+      <a href="#ecosystem">子应用</a>
       <a href="#quickstart">快速开始</a>
       <a href="#pipeline">数据能力</a>
       <a href="#security">安全</a>
@@ -32,15 +33,15 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <span class="badge">开源 · Django 4.2+ · Python 3.9+</span>
+      <span class="badge">Ordloom 1.2.0 · Django 4.2+ · Python 3.9+</span>
       <h1>让 Django Admin,<br /><em>长成你的业务工作台</em></h1>
       <p class="hero-sub">一个 pip 包,接管你的后台:可视化页面搭建、数字大屏、业务报表、表单问卷、数据订阅与企业级安全——<b>零前端工程</b>,装上即用。</p>
       <div class="hero-actions">
-        <div class="install" id="installCmd"><code>pip install ordloom==1.0.0</code><button class="copy" data-copy="pip install ordloom==1.0.0" aria-label="复制安装命令">复制</button></div>
+        <div class="install" id="installCmd"><code>pip install ordloom==1.2.0</code><button class="copy" data-copy="pip install ordloom==1.2.0" aria-label="复制安装命令">复制</button></div>
         <a class="btn ghost" href="https://neekin.github.io/ordloom-docs/" target="_blank" rel="noopener">阅读使用手册 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
       </div>
       <div class="hero-chips">
-        <span>38 种搭建选项</span><span>17 类数据图表</span><span>11 套起始模板</span><span>GraphQL 数据层可选</span>
+        <span>39 种搭建选项</span><span>18 类数据图表</span><span>17 套页面模板</span><span>9 个业务子应用</span><span>GraphQL 数据层可选</span>
       </div>
     </div>
     <div class="hero-glow" aria-hidden="true"></div>
@@ -61,13 +62,13 @@
   <section class="section" id="features">
     <div class="wrap">
       <h2 class="reveal">一个包,接管整个后台</h2>
-      <p class="section-sub reveal">不写前端,也能交付业务系统。所有能力都来自同一个 pip 包,按需启用。</p>
+      <p class="section-sub reveal">不写前端,也能交付业务系统。核心能力按需启用,CRM 等业务子应用独立安装。</p>
       <div class="features">
-        <article class="card reveal"><span class="ico"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><h3>可视化页面搭建</h3><p>38 种组件拖入画布:文本、指标、图表、表格、轮播、表单……对齐吸附、图层管理、撤销重做、模板起步。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></span><h3>可视化页面搭建</h3><p>39 种组件拖入画布:文本、指标、图表、表格、轮播、表单……对齐吸附、图层管理、撤销重做、模板起步。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-desktop" aria-hidden="true"></i></span><h3>数字大屏与 H5</h3><p>1600×900 大屏与 375 宽 H5 画板,滚动叙事动画、多屏轮播播放器、全屏放映与免登录公开链接。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></span><h3>业务报表</h3><p>选模型 → 维度 → 指标 → 条件 → 图表,聚合报表保存后可嵌入工作台与可视化页面,数据权限始终按实际读取身份执行。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-database" aria-hidden="true"></i></span><h3>数据集与字段绑定</h3><p>GraphQL 字段目录、类型化筛选与聚合;发布不可变版本,组件绑定明确版本与参数,升级互不影响。</p></article>
-        <article class="card reveal"><span class="ico"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span><h3>表单与问卷</h3><p>9 种题型、服务端校验、题目快照与防重复提交;结果按创建人隔离,支持筛选与 CSV 导出。</p></article>
+        <article class="card reveal"><span class="ico"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span><h3>表单与问卷</h3><p>12 种题型、条件显示与跳题、章节分步、服务端校验和历史快照;按当前权限查看结果,支持 CSV/Excel 导出与汇总。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></span><h3>公开分享与授权</h3><p>UUID 免登录分享;二维码、访问密码、有效期与关闭分享;页面专用数据授权可随时撤销,只返回映射字段。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span><h3>变更订阅</h3><p>模型数据变化经 WebSocket 或签名轮询推送,绑定组件自动重读——刷新间隔、在途合并与隐藏暂停一应俱全。</p></article>
         <article class="card reveal"><span class="ico"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span><h3>工作台</h3><p>卡片拖拽排序、宽度与隐藏按账号持久化,5 套工作台模板;业务报表一键嵌入工作台。</p></article>
@@ -76,21 +77,54 @@
     </div>
   </section>
 
-  <section class="section alt" id="quickstart">
+  <section class="section alt" id="ecosystem">
+    <div class="wrap">
+      <h2 class="reveal">九个子应用,按业务逐步接入</h2>
+      <p class="section-sub reveal">SDK v1 统一菜单、概览、搭建组件与任务。每个业务包独立安装,复用宿主模型权限。</p>
+      <div class="features apps-grid">
+        <article class="card app-card reveal featured"><span class="ico"><i class="fa-solid fa-address-book" aria-hidden="true"></i></span><h3>CRM 客户关系</h3><code>ordloom-crm</code><p>客户、联系人、线索阶段与只追加跟进记录；按客户负责人隔离,到期跟进自动站内提醒。</p><a href="https://neekin.github.io/ordloom-docs/guides/crm.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span><h3>CMS 内容管理</h3><code>ordloom-cms</code><p>站点、栏目、文章审核与不可变发布快照,连接公开内容与会员专享内容。</p><a href="https://neekin.github.io/ordloom-docs/guides/cms-and-members.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-users" aria-hidden="true"></i></span><h3>基础会员</h3><code>ordloom-members</code><p>复用宿主账号,提供会员注册登录、资料、业务分组与有效会话管理。</p><a href="https://neekin.github.io/ordloom-docs/guides/cms-and-members.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span><h3>商城</h3><code>ordloom-shop</code><p>商品与 SKU、库存流水、幂等下单和会员订单,支持后台人工履约。</p><a href="https://neekin.github.io/ordloom-docs/guides/shop.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-comments" aria-hidden="true"></i></span><h3>微信接入</h3><code>ordloom-wechat</code><p>公众号与小程序身份接入、回调验签与收件,显式绑定会员身份。</p><a href="https://neekin.github.io/ordloom-docs/guides/wechat.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span><h3>到期提醒</h3><code>ordloom-reminders</code><p>登记合同、证照和资质到期事项,按负责人扫描,生成去重站内提醒。</p><a href="https://neekin.github.io/ordloom-docs/guides/operations-apps.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-headset" aria-hidden="true"></i></span><h3>工单服务台</h3><code>ordloom-tickets</code><p>受理、指派、状态流转与回复记录,用 SLA 超时提醒跟进服务进度。</p><a href="https://neekin.github.io/ordloom-docs/guides/operations-apps.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i></span><h3>资产台账</h3><code>ordloom-assets</code><p>登记设备与资产,保留领用、归还、维修和报废流水,支持盘点提醒。</p><a href="https://neekin.github.io/ordloom-docs/guides/operations-apps.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+        <article class="card app-card reveal"><span class="ico"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span><h3>活动报名</h3><code>ordloom-events</code><p>复用会员会话完成活动报名、取消与名额控制,支持员工后台签到。</p><a href="https://neekin.github.io/ordloom-docs/guides/events.html" target="_blank" rel="noopener">接入指南 <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <div class="crm-preview reveal">
+        <div>
+          <span class="badge">本次新增 · CRM 0.1.0</span>
+          <h3>从一个客户,到每一次跟进</h3>
+          <p>把客户、联系人与线索放在同一个工作空间。负责人转交时同步更新数据范围,跟进记录保留历史。</p>
+          <ul><li>客户与联系人台账,按负责人隔离</li><li>新线索 → 联系 → 确认意向 → 成交/流失</li><li>精确预计金额与当前范围概览</li><li>只追加跟进记录,到期站内提醒</li></ul>
+          <div class="code"><pre><code>pip install ordloom-crm==0.1.0</code></pre><button class="copy" data-copy="pip install ordloom-crm==0.1.0" aria-label="复制 CRM 安装命令">复制</button></div>
+          <p class="step-note">安装后注册应用、执行迁移并授予模型权限。任务由宿主调度,CRM 在后台使用。</p>
+          <a href="https://neekin.github.io/ordloom-docs/guides/crm.html" target="_blank" rel="noopener">查看 CRM 完整指南 ↗</a>
+        </div>
+        <figure><img src="assets/crm-overview.png" alt="CRM 客户概览：当前负责人范围内的客户、线索、预计金额与跟进事项" loading="lazy" /><figcaption>CRM 客户概览 · 隔离示例数据</figcaption></figure>
+      </div>
+      <p class="ecosystem-note reveal">本轮五个新包与原有 CMS、会员、商城、微信共同组成九应用生态,各业务包版本为 0.1.0。<a href="https://neekin.github.io/ordloom-docs/releases/1.2.0.html" target="_blank" rel="noopener">阅读 1.2.0 发布说明 ↗</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="quickstart">
     <div class="wrap">
       <h2 class="reveal">三步接入,现有项目直接用</h2>
       <p class="section-sub reveal">不必重写业务:保留模型与 Admin 注册,Ordloom 负责界面与体验。</p>
       <div class="steps">
         <div class="step reveal"><h4>① 安装</h4>
-          <div class="code"><pre><code>pip install ordloom==1.0.0
+          <div class="code"><pre><code>pip install ordloom==1.2.0
 <span class="c"># 需要数据集 / 报表 / 订阅时:</span>
-pip install 'ordloom[graphql]==1.0.0'</code></pre><button class="copy" data-copy="pip install ordloom==1.0.0">复制</button></div>
+pip install 'ordloom[graphql]==1.2.0'</code></pre><button class="copy" data-copy="pip install ordloom==1.2.0">复制</button></div>
           <p class="step-note">发行包内置已构建的前端资源,常规安装不需要 Node.js。</p>
         </div>
         <div class="step reveal"><h4>② 注册与挂载</h4>
           <div class="code"><pre><code>INSTALLED_APPS = [
     <span class="s">"django.contrib.admin"</span>, …,
     <span class="s">"ordloom"</span>,
+    <span class="c"># 按需启用 CRM:</span>
+    <span class="c"># "ordloom_crm.apps.ExtensionConfig",</span>
 ]
 
 urlpatterns = [
@@ -140,7 +174,7 @@ python manage.py runserver</code></pre><button class="copy" data-copy="python ma
   <section class="cta">
     <div class="wrap">
       <h2 class="reveal">今天就把后台换装</h2>
-      <div class="install center" id="installCmd2"><code>pip install ordloom==1.0.0</code><button class="copy" data-copy="pip install ordloom==1.0.0" aria-label="复制安装命令">复制</button></div>
+      <div class="install center" id="installCmd2"><code>pip install ordloom==1.2.0</code><button class="copy" data-copy="pip install ordloom==1.2.0" aria-label="复制安装命令">复制</button></div>
       <div class="cta-links reveal">
         <a class="btn" href="https://github.com/neekin/simpleui-antd" target="_blank" rel="noopener">源码仓库</a>
         <a class="btn ghost" href="https://neekin.github.io/ordloom-docs/" target="_blank" rel="noopener">使用手册</a>
@@ -155,11 +189,11 @@ python manage.py runserver</code></pre><button class="copy" data-copy="python ma
     <img src="assets/icon-192.png" alt="" class="foot-mark" />
     <div>
       <b>序衡 Ordloom</b><span>可配置的 Django Admin 工作台</span>
-      <small>© 2026 序衡 Ordloom · 开源软件 · 使用手册与源码以上方链接为准</small>
+      <small>© 2026 序衡 Ordloom · 1.2.0 · 开源软件 · 使用手册与源码以上方链接为准</small>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=1.2.0"></script>
 </body>
 </html>

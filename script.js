@@ -11,7 +11,10 @@
       burger.setAttribute('aria-expanded', open ? 'true' : 'false')
     })
     links.addEventListener('click', event => {
-      if (event.target.tagName === 'A') links.classList.remove('open')
+      if (event.target.closest('a')) {
+        links.classList.remove('open')
+        burger.setAttribute('aria-expanded', 'false')
+      }
     })
   }
 

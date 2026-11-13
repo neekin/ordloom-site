@@ -205,3 +205,21 @@ h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 0 0 10px; text-align: center; 
   .show-grid { grid-template-columns: 1fr; }
   .hero { padding: 64px 0 48px; }
 }
+
+/* 子应用与 CRM 概览 */
+.section { scroll-margin-top: 78px; }
+.app-card { display: flex; flex-direction: column; }
+.app-card.featured { border-color: var(--brand); box-shadow: 0 8px 28px rgba(99,102,241,.08); }
+.app-card > code { color: var(--brand); font-size: 12px; margin-bottom: 10px; }
+.app-card > a { font-size: 13px; margin-top: auto; padding-top: 16px; }
+.crm-preview { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; align-items: center; margin-top: 56px; padding: 32px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.crm-preview > *, .steps > *, .install { min-width: 0; }
+.crm-preview h3 { font-size: 25px; line-height: 1.4; margin: 16px 0; }
+.crm-preview p, .crm-preview ul { color: var(--muted); font-size: 14px; }
+.crm-preview ul { padding-left: 20px; }
+.crm-preview figure { margin: 0; }
+.crm-preview img { display: block; width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+.crm-preview figcaption, .ecosystem-note { color: var(--muted); font-size: 13px; text-align: center; margin-top: 14px; }
+.ecosystem-note { margin-top: 28px; }
+@media (max-width: 960px) { .crm-preview { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .crm-preview { padding: 22px; gap: 22px; } .install { max-width: 100%; gap: 8px; padding: 11px 12px; font-size: 13px; } }
